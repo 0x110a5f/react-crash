@@ -1,100 +1,16 @@
-# React Crash Learning
+# React + Vite
 
-## Core
-- Must learn.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-### JSX
-- An extension that allows HTML-like markup to be written in JavaScript.
+Currently, two official plugins are available:
 
-```jsx
-function SampleListItem() {
-    return (
-        <div class="sample-list-item">
-            List item.
-        </div>
-    )
-}
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-export default function SampleDiv() {
-    /* Should always return a single root element */
-    return (
-        /* can be  */
-        <> 
-            <SampleListItem />
-            <SampleListItem />
-            <SampleListItem />
-        </>
-    )
-}
-```
+## React Compiler
 
-#### Rules
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-- Should always return a single root element.
-    - If you want to return a set of multiple components/elements, those should be wrapped in a single parent element.
-    - You can use an empty tag or **Fragment** (`<>` and `</>`) instead of a `div` for wrapping children elements. 
+## Expanding the ESLint configuration
 
-- All tags must be closed.
-    - Self-closing such as `<img />`.
-    - Closing tag such as `<li> ... </li>`.
-
-- camelCasing
-    - HTML and SVG attributrs must be written in camelCase. example as follows:
-        - `className` instead of `class`.
-    - List of DOM components props, click [here](https://react.dev/reference/react-dom/components/common).
-    - HTML/SVG to JSX converer, click [here](https://transform.tools/html-to-jsx).
-
-### Function Components
-
-- Components are defined by creating a function that returns it.
-- Function name should always start with a capital letter.
-- Without the parenthesis, any code after the `return` will be ignored.
-```jsx
-function Sample() {
-    return (
-        <div> This is a div. </div>
-    )
-}
-```
-
-#### Exporting Components
-
-- The `export default` prefix lets you create a component from a separated file and import it to another file(s).
-```jsx
-export default function Sample() {
-    return (
-        <div> This is a div. </div>
-    )
-}
-```
-
-#### Using components
-
-- You can declare a child component on the top level inside the same file as the parent component.
-    - See [SampleList.jsx](src/core/SampleList.jsx) for example.
-
-- You can also import a child component from another file.
-    - See [Parent.jsx](src/core/Parent.jsx) and [Child.jsx](src/core/Child.jsx) for example.
-
-- Do not nest the definition of components
-```jsx
-/* WRONG WAY */
-export default function Parent() {
-    function Child() {
-
-    }
-}
-
-/* RIGHT WAY */
-export default function Parent() { ... }
-
-function Child() {...}
-```
-
-### State (`UseState`) with event handlers.
-
-- Adding state to a component.
-- `useState` returns exactly two values:
-    - The current state.
-    - A invokable (`set` function) to update the state's value.
-- See [StateSample.jsx](src/core/UseStateSample.jsx) for example.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
