@@ -9,9 +9,11 @@
 - Lists
 
 ### Learning Application
-- Counter
-- Todo list (add / remove)
-- Conditional UI (loading, empty)
+- Create a sample application that can do the following:
+    - Render a list of items.
+    - Add or Remove item(s) from the list.
+    - Filter items of the list.
+    - Create reusable components.
 
 ### Understand Concepts
 - One-way data flow
@@ -26,8 +28,9 @@
 - Controlled inputs
 
 ### Learning Application
-- Parent manages state
-- Child emits events via callbacks
+- Create a sample app that can do the following:
+    - Supports shared state.
+    - Components that can emit events.
 
 ---
 ## Day 3 – Routing (Critical)
@@ -45,10 +48,7 @@ $ npm i react-router-dom
 - _Bonus: Protected routes (simple boolean auth)_
 
 ### Learning Application
-- create pages for the following:
-    - /login
-    - /dashboard (includes of items)
-    - /items/:id
+- Create a sample application that uses navigation.
 
 ---
 ## Day 4 – Data Fetching
@@ -59,8 +59,9 @@ $ npm i react-router-dom
 - Loading & error states
 
 ### Learning Application
-- Fetch list from public API
-- Detail page via route param
+- Create a sample application that can:
+    - Fetch data from a public api
+    - Display a dedicated page for a specific piece of data.
 
 ---
 ## Day 5 – Forms & Validation
@@ -75,8 +76,7 @@ $ npm i react-hook-form
 ```
 
 ### Learning Application
-- Login form
-- Create/Edit form
+- Create a sample application that can validate user inputs.
 
 ---
 ## Day 6 – State Management (Light)
@@ -89,19 +89,19 @@ npm i zustand
 - useContext
 
 ### Learning Application
-- Global auth state
-- User profile
+- Create a sample application that can support an app wide state that are sharable across multiple components and pages.
 
 ---
 ## Day 7 – Real App Assembly
 
 ### Build the following
-- Auth (fake is fine)
-- Dashboard
-- CRUD page
-- Routing
-- API integration
-- Loading + error handling
+- This will cover most of what was learned so far:
+    - Auth (fake is fine)
+    - Dashboard
+    - CRUD page
+    - Routing
+    - API integration
+    - Loading + error handling
 
 ### Directory Structure
 
