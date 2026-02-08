@@ -1,4 +1,4 @@
-## Day 1 – Core
+## Set 1 – Core
 
 ### Learn
 - JSX
@@ -20,7 +20,7 @@
 - Props are read-only
 
 ---
-## Day 2 – Component Communication
+## Set 2 – Component Communication
 
 ### Learn
 - Props
@@ -33,7 +33,7 @@
     - Components that can emit events.
 
 ---
-## Day 3 – Routing (Critical)
+## Set 3 – Routing (Critical)
 
 ### Install:
 ```zsh
@@ -51,7 +51,7 @@ $ npm i react-router-dom
 - Create a sample application that uses navigation.
 
 ---
-## Day 4 – Data Fetching
+## Set 4 – Data Fetching
 
 ### Learn
 - useEffect
@@ -64,7 +64,7 @@ $ npm i react-router-dom
     - Display a dedicated page for a specific piece of data.
 
 ---
-## Day 5 – Forms & Validation
+## Set 5 – Forms & Validation
 
 ### Learn
 - Controlled inputs
@@ -79,7 +79,7 @@ $ npm i react-hook-form
 - Create a sample application that can validate user inputs.
 
 ---
-## Day 6 – State Management (Light)
+## Set 6 – State Management (Light)
 - For this part, use `Zustand` for simplicity of handling app wide state.
 ```zsh
 npm i zustand
@@ -92,7 +92,7 @@ npm i zustand
 - Create a sample application that can support an app wide state that are sharable across multiple components and pages.
 
 ---
-## Day 7 – Real App Assembly
+## Set 7 – Real App Assembly
 
 ### Build the following
 - This will cover most of what was learned so far:
