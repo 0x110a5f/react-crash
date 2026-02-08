@@ -40,3 +40,19 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.todo-item {
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem;
+}
+
+button.btn-done {
+  background-color: green;
+}
+
+button.btn-del {
+  background-color: red;
+}
