@@ -126,3 +126,49 @@ function Child() {...}
     - Example: condition && "Hello".
     - If the `condition` is true, it will return "Hello", otherwise, it will return null.
 
+---
+## Component communication
+
+### Props
+- Ways to define components with props.
+```jsx
+// It can be simply defined as an object.
+// members can be accessed via dot notation.
+function ComponentA(props) {
+    const name = props.name;
+}
+
+// Or by explicitly naming props members
+function ComponentB({ name, age }) {
+    // ...
+}
+```
+- Ways to pass props to a component.
+```jsx
+function ComponentC() {
+    const user = {
+        name: "Some user",
+        age: 25,
+    };
+
+
+    return (
+        <>
+            {/* Pass all data by `...` (spread) operator */}
+            <ComponentA {...user}>
+            {/* Pass all by asigning thru property name */}
+            <ComponentA name={user.name} age={user.age}>
+        <>
+    )
+}
+```
+
+## Lifting state up
+- There are times that a state is shared by multiple components, instead of having those component manage their own state, the state is passed down from the parent.
+
+- see [SharedCounter.jsx](src/samples/component_communication/SharedCounter.jsx) form example.
+
+## Controlled Inputs
+- Form elements like `inputs`, `textarea`, etc, uses state handled by the DOM marking them as uncontrolled elements/components. When React states are used with these elements, it is then considered as controlled elements/components.
+
+- see [ControlledForm.jsx](src/samples/component_communication/ControlledForm.jsx)
