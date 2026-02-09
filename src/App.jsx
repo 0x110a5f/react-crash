@@ -1,13 +1,13 @@
 import './App.css'
-import BookList from './samples/core/BookList'
-import ConditionalBookList from './samples/core/ConditionalBookList'
-import FilteredBookList from './samples/core/FilteredBookList'
-import UseStateSample from './samples/core/UseStateSample'
+import BookList from './lessons/core/BookList'
+import ConditionalBookList from './lessons/core/ConditionalBookList'
+import FilteredBookList from './lessons/core/FilteredBookList'
+import UseStateSample from './lessons/core/UseStateSample'
 
-import CompCom from './samples/component_communication/CompCom';
-import SharedCounter from './samples/component_communication/SharedCounter'
-import ControlledForm from './samples/component_communication/ControlledForm'
-import ItemAvailabilityChecker from './samples/apps/item_availability_checker/ItemAvailabilityChecker'
+import CompCom from './lessons/component_communication/CompCom';
+import SharedCounter from './lessons/component_communication/SharedCounter'
+import ControlledForm from './lessons/component_communication/ControlledForm'
+import ItemAvailabilityChecker from './samples/item_availability_checker/ItemAvailabilityChecker'
 
 function App() {
   return (

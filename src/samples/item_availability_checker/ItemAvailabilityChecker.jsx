@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { item_list } from "../../../fixtures/item_list";
+import { item_list } from "../../fixtures/item_list";
 
 
 function ItemNameInput({ setValue }) {

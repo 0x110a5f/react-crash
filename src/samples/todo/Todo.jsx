@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { todo_items } from "../../../fixtures/todo_items";
+import { todo_items } from "../../fixtures/todo_items";
 import TodoItem from "./TodoItem";
 
 function Todo() {
